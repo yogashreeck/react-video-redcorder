@@ -35,7 +35,7 @@ const videoType = 'video/webm';
     // wipe old data chunks
     this.chunks = [];
     // start recorder with 10ms buffer
-    this.mediaRecorder.start(10);
+    // this.mediaRecorder.start(10);
     // say that we're recording
     this.setState({recording: true});
   }
@@ -43,7 +43,7 @@ const videoType = 'video/webm';
   stopRecording(e) {
     e.preventDefault();
     // stop the recorder
-    this.mediaRecorder.stop();
+    // this.mediaRecorder.stop();
     // say that we're not recording
     this.setState({recording: false});
     // save the video to memory
